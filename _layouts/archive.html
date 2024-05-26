@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    <!-- ======= Header ======= -->
+    {% include header.html %}<!-- End Header -->
+
+    <main id="main">
+      <!-- ======= Search Results ======= -->
+      <section id="search-result" class="search-result">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              {% for posts in site.posts %}
+              <div class="d-md-flex post-entry-2 small-img">
+                <a href="{{ posts.url }}" class="me-4 thumbnail">
+                  <img
+                    src="{{ posts.image }}"
+                    alt="{{ posts.title }}"
+                    class="img-fluid"
+                  />
+                </a>
+                <div>
+                  <div class="post-meta">
+                    {% for category in posts.categories %}
+                    <span class="date">{{ category }},</span>
+                    {% endfor %}
+                    <span class="mx-1">&bullet;</span>
+                    <span>
+                      {{ posts.date | date_to_string: "ordinal", "US" }}
+                    </span>
+                  </div>
+                  <h3>
+                    <a href="{{ posts.url }}">{{ posts.title }}</a>
+                  </h3>
+                  <p>{{ posts.description }}</p>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+
+            <div class="col-md-3">{% include side-bar.html %}</div>
+          </div>
+        </div>
+      </section>
+      <!-- End Search Result -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    {% include footer.html %}
+    <a
+      href="#"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    {% include scripts.html %}
+  </body>
+</html>

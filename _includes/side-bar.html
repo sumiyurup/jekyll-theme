@@ -1,0 +1,175 @@
+<!-- ======= Sidebar ======= -->
+<div class="aside-block">
+  <ul class="nav nav-pills custom-tab-nav mb-4" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link active"
+        id="pills-popular-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#pills-popular"
+        type="button"
+        role="tab"
+        aria-controls="pills-popular"
+        aria-selected="true"
+      >
+        Popular
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="pills-trending-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#pills-trending"
+        type="button"
+        role="tab"
+        aria-controls="pills-trending"
+        aria-selected="false"
+      >
+        Trending
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link"
+        id="pills-latest-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#pills-latest"
+        type="button"
+        role="tab"
+        aria-controls="pills-latest"
+        aria-selected="false"
+      >
+        Latest
+      </button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="pills-tabContent">
+    <!-- Popular -->
+    <div
+      class="tab-pane fade show active"
+      id="pills-popular"
+      role="tabpanel"
+      aria-labelledby="pills-popular-tab"
+    >
+      {% for posts in site.posts %}
+      <!---->
+      {% if posts.popular != false %}
+      <div class="post-entry-1 border-bottom">
+        <div class="post-meta">
+          {% for category in posts.categories %}
+          <span class="date">{{ category }},</span>
+          {% endfor %}
+          <span class="mx-1">&bullet;</span>
+          <span>{{ posts.date | date_to_string: "ordinal", "US" }} </span>
+        </div>
+        <h2 class="mb-2">
+          <a href="{{ posts.url }}">{{ posts.title }}</a>
+        </h2>
+      </div>
+      {% endif %}
+      <!---->
+      {% endfor %}
+    </div>
+    <!-- End Popular -->
+
+    <!-- Trending -->
+    <div
+      class="tab-pane fade"
+      id="pills-trending"
+      role="tabpanel"
+      aria-labelledby="pills-trending-tab"
+    >
+      {% for posts in site.posts %}
+      <!---->
+      {% if posts.trending != false %}
+      <div class="post-entry-1 border-bottom">
+        <div class="post-meta">
+          {% for category in posts.categories %}
+          <span class="date">{{ category }},</span>
+          {% endfor %}
+          <span class="mx-1">&bullet;</span>
+          <span>{{ posts.date | date_to_string: "ordinal", "US" }} </span>
+        </div>
+        <h2 class="mb-2">
+          <a href="{{ posts.url }}">{{ posts.title }}</a>
+        </h2>
+      </div>
+      {% endif %}
+      <!---->
+      {% endfor %}
+    </div>
+    <!-- End Trending -->
+
+    <!-- Latest -->
+    <div
+      class="tab-pane fade"
+      id="pills-latest"
+      role="tabpanel"
+      aria-labelledby="pills-latest-tab"
+    >
+      {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+      <!---->
+      {% for posts in sorted_posts limit:6 %}
+      <div class="post-entry-1 border-bottom">
+        <div class="post-meta">
+          {% for category in posts.categories %}
+          <span class="date">{{ category }},</span>
+          {% endfor %}
+          <span class="mx-1">&bullet;</span>
+          <span>{{ posts.date | date_to_string: "ordinal", "US" }} </span>
+        </div>
+        <h2 class="mb-2">
+          <a href="{{ posts.url }}">{{ posts.title }}</a>
+        </h2>
+      </div>
+      <!---->
+      {% endfor %}
+    </div>
+    <!-- End Latest -->
+  </div>
+</div>
+
+<div class="aside-block">
+  <h3 class="aside-title">Categories</h3>
+  <ul class="aside-links list-unstyled">
+    {% for category in site.categories %}
+    <li>
+      <a href="/categories/{{ category }}">
+        <i class="bi bi-chevron-right"></i> {{ category }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<!-- End Categories -->
+
+<div class="aside-block">
+  <h3 class="aside-title">Tags</h3>
+  <!-- Tags -->
+  <ul class="aside-tags list-unstyled">
+    {% assign all_tags = '' | split: ',' %}
+    <!---->
+    {% for post in site.posts %}
+    <!---->
+    {% assign post_tags = post.tags | join: ',' | split: ',' %}
+    <!---->
+    {% assign all_tags = all_tags | concat: post_tags %}
+    <!---->
+    {% endfor %}
+    <!---->
+
+    {% assign unique_tags = all_tags | uniq %}
+
+    <!---->
+    {% for tag in unique_tags %}
+    <li>
+      <a href="/tags/{{ tag }}">{{ tag }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<!-- End Tags -->
+
+{% include cta-small.html %}
