@@ -136,9 +136,9 @@
   <ul class="aside-links list-unstyled">
     {% for category in site.categories %}
     <li>
-      <a href="/categories/{{ category }}">
-        <i class="bi bi-chevron-right"></i> {{ category }}
-      </a>
+      <a href="/categories#{{ category[0] | slugify }}">
+        <i class="bi bi-chevron-right"></i>{{ category[0] }}</a
+      >
     </li>
     {% endfor %}
   </ul>
@@ -165,7 +165,7 @@
     <!---->
     {% for tag in unique_tags %}
     <li>
-      <a href="/tags/{{ tag }}">{{ tag }}</a>
+      <a href="/tags#{{ tag | slugify }}">{{ tag }}</a>
     </li>
     {% endfor %}
   </ul>

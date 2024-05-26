@@ -1,13 +1,15 @@
 ---
-layout: categories
+layout: page
+title: Posts by Categories
+permalink: /categories/
 ---
 
-<h1>{{ page.title }}</h1>
-
-<ul>
+<ul style="list-style: none;">
   {% for category in site.categories %}
-    <li>
-      <h2>{{ category[0] }}</h2>
+  <div id = "{{ category[0] | slugify }}" class ="pt-5" > </div>
+    <li class="pt-5" >
+      <h2  >{{ category[0] | capitalize }}</h2>
+      <hr>
       <ul>
         {% for post in category[1] %}
           <li>
