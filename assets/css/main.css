@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
+  --title-color: #363737;
 }
 
 body {
@@ -26,6 +27,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-primary);
+  color: var(--title-color);
 }
 
 #main {
@@ -41,12 +43,12 @@ section {
 }
 
 .section-header {
-  border-bottom: 2px solid var(--color-black);
+  border-bottom: 2px solid var(--title-color);
 }
 
 .section-header h2 {
   font-size: 50px;
-  color: var(--color-black);
+  color: var(--title-color);
 }
 
 .section-header p {
@@ -369,22 +371,31 @@ section {
 .post-entry-1 img {
   margin-bottom: 30px;
 }
+.post-entry-1 p {
+  color: var(--title-color);
+}
 
 .post-entry-1 h2 {
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  font-weight: 500;
+  font-size: 19px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--title-color);
 }
 
 .post-entry-1 h2 a {
-  color: var(--color-black);
+  color: var(--title-color);
+}
+.post-entry-1.lg {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  text-align: center;
 }
 
 .post-entry-1.lg h2 {
-  font-size: 40px;
-  line-height: 1;
+  font-size: 30px;
+  line-height: 38px;
+  color: var(--title-color);
 }
 
 .post-meta {
@@ -393,7 +404,7 @@ section {
   text-transform: uppercase;
   font-weight: 600;
   font-family: var(--font-secondary);
-  color: rgba(var(--color-black-rgb), 0.4);
+  color: #777;
   margin-bottom: 10px;
 }
 
@@ -425,7 +436,7 @@ section {
 }
 
 .trending > h3 {
-  color: var(--color-black);
+  color: var(--title-color);
   padding: 20px;
   border-bottom: 1px solid rgba(var(--color-black-rgb), 0.1);
 }
@@ -488,7 +499,7 @@ section {
   text-transform: uppercase;
   font-weight: 600;
   font-family: var(--font-secondary);
-  color: rgba(var(--color-black-rgb), 0.4);
+  color: #777;
   margin-bottom: 10px;
 }
 
@@ -850,6 +861,7 @@ section {
 .single-post h6 {
   font-weight: 700;
   margin-top: 2rem;
+  color: var(--title-color);
 }
 .single-post p {
   font-size: 18px;
@@ -857,14 +869,24 @@ section {
 .single-post a {
   color: var(--color-blue);
 }
-
+.btn-secondary {
+  background-color: #eee;
+  border: none;
+  color: var(--title-color);
+}
+.btn-secondary:hover {
+  background-color: #dddddd;
+  border: none;
+  color: var(--title-color);
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 
 .php-email-form {
-  background: rgba(var(--color-blue-rgb), 0.05);
+  background: rgba(var(--color-blue-rgb), 0);
   padding: 30px;
+  padding-left: 0px;
   height: 100%;
 }
 .php-email-form input,
@@ -876,7 +898,7 @@ section {
 }
 .php-email-form input:focus,
 .php-email-form textarea:focus {
-  border-color: var(--color-blue);
+  border-color: rgba(var(--color-black-rgb), 0.1);
 }
 .php-email-form input {
   padding: 10px 15px;
@@ -885,7 +907,7 @@ section {
   padding: 12px 15px;
 }
 .php-email-form button[type="submit"] {
-  background: var(--color-blue);
+  background: #6b26ff;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -898,6 +920,7 @@ section {
 .form h2 {
   margin-top: 0px;
   margin-bottom: 1rem;
+  color: var(--title-color);
 }
 /*--------------------------------------------------------------
 # Footer

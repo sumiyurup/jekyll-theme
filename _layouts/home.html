@@ -8,189 +8,262 @@
     <!-- End Header -->
 
     <main id="main">
-      <!-- ======= Hero Slider Section ======= -->
-      <section id="hero-slider" class="hero-slider">
-        <div class="container-md" data-aos="fade-in">
-          <div class="row">
-            <div class="col-12">
-              <div class="swiper sliderFeaturedPosts">
-                <div class="swiper-wrapper">
-                  <!--Slider-->
-
-                  {% for posts in site.posts %}
-                  <!---->
-                  {% if posts.slide != false %}
-
-                  <div class="swiper-slide">
-                    <a
-                      href="{{posts.url}}"
-                      class="img-bg d-flex align-items-end"
-                      style="
-                        background-image: url('{{posts.slide_image}}');
-                      "
-                    >
-                      <div class="img-bg-inner">
-                        <h2>{{posts.title}}</h2>
-                        <p>{{posts.description}}</p>
-                      </div>
-                    </a>
-                  </div>
-
-                  {% endif %}
-                  <!---->
-                  {% endfor %}
-
-                  <!--Endslider-->
-                </div>
-                <div class="custom-swiper-button-next">
-                  <span class="bi-chevron-right"></span>
-                </div>
-                <div class="custom-swiper-button-prev">
-                  <span class="bi-chevron-left"></span>
-                </div>
-
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Hero Slider Section -->
-
       <!-- ======= Post Grid Section ======= -->
       <section id="posts" class="posts">
-        <div class="container" data-aos="fade-up">
-          <div class="row g-5">
-            <div class="col-lg-4">
-              {% for posts in site.posts %}
-              <!---->
-              {% if posts.featured != false %}
-              <div class="post-entry-1 lg">
-                <a href="{{posts.url}}"
-                  ><img
-                    src="{{posts.image}}"
-                    alt="{{posts.title}}"
-                    class="img-fluid"
-                /></a>
-                <div class="post-meta">
-                  {% for category in posts.categories %}
-                  <span class="date">{{ category }},</span>
-                  {% endfor %}
-                  <span class="mx-1">&bullet;</span>
-                  <span>
-                    {{ posts.date | date_to_string: "ordinal", "US" }}
-                  </span>
+        <div class="container">
+          <div class="row g-5 justify-content-center">
+            <div class="col-lg-9 col-md-9 col-12">
+              <div class="row">
+                {% for posts in site.posts %}
+                <!---->
+                {% if posts.featured != false %}
+                <div class="col-md-6">
+                  <div class="post-entry-1 lg">
+                    <a href="{{posts.url}}"
+                      ><img
+                        src="{{posts.image}}"
+                        alt="{{posts.title}}"
+                        class="img-fluid"
+                    /></a>
+                  </div>
                 </div>
-                <h2>
-                  <a href="{{post.url}}">{{posts.title}}</a>
-                </h2>
-                <p class="mb-4 d-block">{{posts.description}}</p>
+                <div class="col-md-6">
+                  <div class="post-entry-1 lg">
+                    <div class="height">
+                      <div class="post-meta">
+                        {% for category in posts.categories %}
+                        <span class="date">{{ category }},</span>
+                        {% endfor %}
+                        <span class="mx-1">&bullet;</span>
+                        <span>
+                          {{ posts.date | date_to_string: "ordinal", "US" }}
+                        </span>
+                      </div>
+                      <h2>
+                        <a href="{{posts.url}}">{{posts.title}}</a>
+                      </h2>
+                      <p class="mb-4 d-block">{{posts.description}}</p>
+                    </div>
+                  </div>
+                </div>
+                {% endif %}
+                <!---->
+                {% endfor %}
               </div>
-              {% endif %}
-              <!---->
-              {% endfor %}
 
               <!---->
-              {% include cta-small.html %}
+              <hr />
             </div>
 
-            <div class="col-lg-8">
+            <div class="col-lg-9 col-md-9 col-12">
               <div class="row g-5">
-                <div class="col-lg-4 border-start custom-border">
-                  {% assign count = 0 %}
-                  <!---->
-                  {% for post in site.posts %}
-                  <!---->
-                  {% if post.trending != false %}
-                  <div class="post-entry-1">
-                    <a href="{{ post.url }}">
-                      <img
-                        src="{{ post.image }}"
-                        alt="{{ post.title }}"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="post-meta">
-                      {% for category in post.categories %}
-                      <span class="date">{{ category }},</span>
-                      {% endfor %}
-                      <span class="mx-1">&bullet;</span>
-                      <span
-                        >{{ post.date | date_to_string: "ordinal", "US" }}</span
-                      >
-                    </div>
-                    <h2>
-                      <a href="{{ post.url }}">{{ post.title }}</a>
-                    </h2>
-                  </div>
-                  {% assign count = count | plus: 1 %}
-                  <!---->
-                  {% endif %} {% if count == 3 %} {% break %}
-                  <!---->
-                  {% endif %} {% endfor %}
-                </div>
-
-                <div class="col-lg-4 border-start custom-border">
-                  {% assign count = 0 %}
-                  <!---->
-                  {% for post in site.posts %}
-                  <!---->
-                  {% if post.popular != false %}
-                  <div class="post-entry-1">
-                    <a href="{{ post.url }}">
-                      <img
-                        src="{{ post.image }}"
-                        alt="{{ post.title }}"
-                        class="img-fluid"
-                      />
-                    </a>
-                    <div class="post-meta">
-                      {% for category in post.categories %}
-                      <span class="date">{{ category }},</span>
-                      {% endfor %}
-                      <span class="mx-1">&bullet;</span>
-                      <span
-                        >{{ post.date | date_to_string: "ordinal", "US" }}</span
-                      >
-                    </div>
-                    <h2>
-                      <a href="{{ post.url }}">{{ post.title }}</a>
-                    </h2>
-                  </div>
-                  {% assign count = count | plus: 1 %}
-                  <!---->
-                  {% endif %} {% if count == 3 %} {% break %}
-                  <!---->
-                  {% endif %} {% endfor %}
-                </div>
-
-                <!-- Trending Section -->
-                <div class="col-lg-4">
-                  <div class="trending">
-                    <h3>Latest Posts</h3>
-                    <ul class="trending-post">
-                      {% assign sorted_posts = site.posts | sort: 'date' |
-                      reverse %}
-                      <!---->
-                      {% assign post_counter = 1 %}
-                      <!---->
-                      {% for post in sorted_posts limit: 5 %}
-                      <li>
-                        <a href="{{ post.url }}">
-                          <span class="number">{{ post_counter }}</span>
-                          <h3>{{ post.title }}</h3>
-                          <span class="author">
-                            {{ post.date | date_to_string: "ordinal", "US" }}
-                          </span>
-                        </a>
+                <div class="col-md-8">
+                  <div class="aside-block">
+                    <ul
+                      class="nav nav-pills custom-tab-nav mb-4"
+                      id="pills-tab"
+                      role="tablist"
+                    >
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="pills-popular-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-popular"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-popular"
+                          aria-selected="true"
+                        >
+                          Popular
+                        </button>
                       </li>
-                      {% assign post_counter = post_counter | plus: 1 %}
-                      <!---->
-                      {% endfor %}
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="pills-trending-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-trending"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-trending"
+                          aria-selected="false"
+                        >
+                          Trending
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="pills-latest-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-latest"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-latest"
+                          aria-selected="false"
+                        >
+                          Latest
+                        </button>
+                      </li>
                     </ul>
+
+                    <div class="tab-content" id="pills-tabContent">
+                      <!-- Popular -->
+                      <div
+                        class="tab-pane fade show active"
+                        id="pills-popular"
+                        role="tabpanel"
+                        aria-labelledby="pills-popular-tab"
+                      >
+                        <!---->
+                        {% for posts in site.posts %}
+                        <!---->
+                        {% if posts.popular != false %}
+
+                        <div
+                          class="row border-bottom pt-5 justify-content-center"
+                        >
+                          <div class="col-lg-4">
+                            <div class="post-entry-1 mb-0">
+                              <a href="{{posts.url}}"
+                                ><img
+                                  src="{{posts.image}}"
+                                  alt="{{posts.title}}"
+                                  class="img-fluid"
+                              /></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-8">
+                            <div class="post-entry-1">
+                              <div class="post-meta">
+                                {% for category in posts.categories %}
+                                <span class="date">{{ category }},</span>
+                                {% endfor %}
+                                <span class="mx-1">&bullet;</span>
+                                <span
+                                  >{{ posts.date | date_to_string: "ordinal",
+                                  "US" }}
+                                </span>
+                              </div>
+                              <h2 class="mb-2">
+                                <a href="{{ posts.url }}">{{ posts.title }}</a>
+                              </h2>
+                              <p class="mb-4 d-block">{{posts.description}}</p>
+                            </div>
+                          </div>
+                        </div>
+                        {% endif %}
+                        <!---->
+                        {% endfor %}
+                      </div>
+                      <!-- End Popular -->
+
+                      <!-- Trending -->
+                      <div
+                        class="tab-pane fade"
+                        id="pills-trending"
+                        role="tabpanel"
+                        aria-labelledby="pills-trending-tab"
+                      >
+                        {% for posts in site.posts %}
+                        <!---->
+                        {% if posts.trending != false %}
+                        <div
+                          class="row border-bottom pt-5 justify-content-center"
+                        >
+                          <div class="col-lg-4">
+                            <div class="post-entry-1 mb-0">
+                              <a href="{{posts.url}}"
+                                ><img
+                                  src="{{posts.image}}"
+                                  alt="{{posts.title}}"
+                                  class="img-fluid"
+                              /></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-8">
+                            <div class="post-entry-1">
+                              <div class="post-meta">
+                                {% for category in posts.categories %}
+                                <span class="date">{{ category }},</span>
+                                {% endfor %}
+                                <span class="mx-1">&bullet;</span>
+                                <span
+                                  >{{ posts.date | date_to_string: "ordinal",
+                                  "US" }}
+                                </span>
+                              </div>
+                              <h2 class="mb-2">
+                                <a href="{{ posts.url }}">{{ posts.title }}</a>
+                              </h2>
+                              <p class="mb-4 d-block">{{posts.description}}</p>
+                            </div>
+                          </div>
+                        </div>
+                        {% endif %}
+                        <!---->
+                        {% endfor %}
+                      </div>
+                      <!-- End Trending -->
+
+                      <!-- Latest -->
+                      <div
+                        class="tab-pane fade"
+                        id="pills-latest"
+                        role="tabpanel"
+                        aria-labelledby="pills-latest-tab"
+                      >
+                        {% assign sorted_posts = site.posts | sort: 'date' |
+                        reverse %}
+                        <!---->
+                        {% for posts in sorted_posts limit:6 %}
+                        <div
+                          class="row border-bottom pt-5 justify-content-center"
+                        >
+                          <div class="col-lg-4">
+                            <div class="post-entry-1 mb-0">
+                              <a href="{{posts.url}}"
+                                ><img
+                                  src="{{posts.image}}"
+                                  alt="{{posts.title}}"
+                                  class="img-fluid"
+                              /></a>
+                            </div>
+                          </div>
+                          <div class="col-lg-8">
+                            <div class="post-entry-1">
+                              <div class="post-meta">
+                                {% for category in posts.categories %}
+                                <span class="date">{{ category }},</span>
+                                {% endfor %}
+                                <span class="mx-1">&bullet;</span>
+                                <span
+                                  >{{ posts.date | date_to_string: "ordinal",
+                                  "US" }}
+                                </span>
+                              </div>
+                              <h2 class="mb-2">
+                                <a href="{{ posts.url }}">{{ posts.title }}</a>
+                              </h2>
+                              <p class="mb-4 d-block">{{posts.description}}</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!---->
+                        {% endfor %}
+                      </div>
+                      <!-- End Latest -->
+
+                      <a href="/archive/" class="btn btn-secondary mt-5"
+                        >See All <i class="bi bi-chevron-right"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
+
                 <!-- End Trending Section -->
+                <div class="col-md-4">{% include cta-small.html %}</div>
               </div>
             </div>
           </div>
