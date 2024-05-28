@@ -864,7 +864,7 @@ section {
   color: var(--title-color);
 }
 .single-post p {
-  font-size: 18px;
+  font-size: 16px;
 }
 .single-post a {
   color: var(--color-blue);
@@ -878,6 +878,9 @@ section {
   background-color: #dddddd;
   border: none;
   color: var(--title-color);
+}
+.single-post h1 {
+  font-size: 30px !important;
 }
 /*--------------------------------------------------------------
 # Contact
