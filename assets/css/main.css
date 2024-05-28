@@ -865,6 +865,7 @@ section {
 }
 .single-post p {
   font-size: 16px;
+  font-family: var(--font-article);
 }
 .single-post a {
   color: var(--color-blue);
@@ -924,6 +925,8 @@ section {
   margin-top: 0px;
   margin-bottom: 1rem;
   color: var(--title-color);
+  font-size: 24px;
+  font-weight: 400;
 }
 /*--------------------------------------------------------------
 # Footer

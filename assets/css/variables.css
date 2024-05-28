@@ -8,6 +8,7 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Roboto", sans-serif; /*'Playfair Display', serif;*/
   --font-secondary: "Roboto", sans-serif;
+  --font-article: "Spectral", serif;
 
   /* Colors */
   /* The *-rgb color names are simply the RGB converted value of the corresponding color for use in the rgba() function */
