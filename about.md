@@ -1,7 +1,7 @@
 ---
-layout: page
 title: About
 permalink: /about/
+layout: about
 ---
 
 ## So, what is Noahpinion anyway?
@@ -14,7 +14,7 @@ Subscribe
 
 ## Why should I become a paid subscriber?
 
-If you really like reading Noahpinion, of course, then you should become a paid subscriber in order to read all the articles. Or if you just like my general outlook and approach, and you want to support my work, that’s another reason to get the full subscription! If you *really* love Noahpinion, you can even become a “founding member”, or give a gift subscription to someone else.
+If you really like reading Noahpinion, of course, then you should become a paid subscriber in order to read all the articles. Or if you just like my general outlook and approach, and you want to support my work, that’s another reason to get the full subscription! If you _really_ love Noahpinion, you can even become a “founding member”, or give a gift subscription to someone else.
 
 I really appreciate all my paid subscribers, since it’s because of them that I can do this as a full-time job instead of a hobby! In the near future, I plan to come out with some more features that are for paid subscribers only, including more interaction and discussion. I want my paid subscribers to be a community where we can discuss interesting stuff.
 
@@ -25,8 +25,6 @@ Basically, I’m just a guy who writes about economics. Blogging has been my hob
 I currently live in San Francisco with my two pet rabbits, Cinnamon and Constable Giggles. This is me:
 
 ![img](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F58e4731b-0451-4d5e-b90d-0b991bbba2fc_441x441.jpeg)
-
-
 
 ## What is Noahpinion’s general outlook, philosophy, and political orientation?
 
@@ -56,12 +54,8 @@ Absolutely. I was hoping you’d ask! This is Cinnamon:
 
 ![img](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fca7e9d94-1b4b-473d-b514-8b99f31995c5_2048x1934.jpeg)
 
-
-
 And this is Giggles:
 
 ![img](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F52181386-94a0-4347-939d-0e4018117572_1024x768.jpeg)
-
-
 
 Anyway, that’s about it. Looking forward to having you on board!
