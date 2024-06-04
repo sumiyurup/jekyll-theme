@@ -8,11 +8,11 @@ navigation:
   - title: "Home"
     url: "/"
 
-  - title: "About"
-    url: "/about/"
-
   - title: "Archive"
     url: "/archive/"
+
+  - title: "About"
+    url: "/about/"
 
 # Build settings
 theme: minima

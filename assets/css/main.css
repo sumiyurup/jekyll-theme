@@ -869,7 +869,10 @@ section {
   font-family: var(--font-article);
 }
 .single-post a {
-  color: var(--color-blue);
+  color: #6b26ff;
+}
+.single-post a:hover {
+  text-decoration: underline;
 }
 .btn-secondary {
   background-color: #eee;
@@ -886,6 +889,11 @@ section {
 }
 .single-post h4 {
   font-size: 21px;
+}
+
+.single-post .sub-tile {
+  font-family: var(--font-primary);
+  color: #777;
 }
 /*--------------------------------------------------------------
 # Contact

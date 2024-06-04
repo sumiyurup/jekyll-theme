@@ -13,6 +13,8 @@
           <div class="row justify-content-center">
             <div class="col-md-9">
               {% for posts in site.posts %}
+              <!---->
+              {% if posts.featured != false %}
               <div class="d-md-flex post-entry-2 small-img">
                 <a href="{{ posts.url }}" class="me-4 thumbnail">
                   <img
@@ -37,7 +39,37 @@
                   <p>{{ posts.description }}</p>
                 </div>
               </div>
-              {% endfor %}
+              {% endif %} {% endfor %}
+            </div>
+            <div class="col-md-9">
+              {% for posts in site.posts %}
+              <!---->
+              {% if posts.featured != true %}
+              <div class="d-md-flex post-entry-2 small-img">
+                <a href="{{ posts.url }}" class="me-4 thumbnail">
+                  <img
+                    src="{{ posts.image }}"
+                    alt="{{ posts.title }}"
+                    class="img-fluid"
+                  />
+                </a>
+                <div>
+                  <div class="post-meta">
+                    {% for category in posts.categories %}
+                    <span class="date">{{ category }},</span>
+                    {% endfor %}
+                    <span class="mx-1">&bullet;</span>
+                    <span>
+                      {{ posts.date | date_to_string: "ordinal", "US" }}
+                    </span>
+                  </div>
+                  <h3>
+                    <a href="{{ posts.url }}">{{ posts.title }}</a>
+                  </h3>
+                  <p>{{ posts.description }}</p>
+                </div>
+              </div>
+              {% endif %} {% endfor %}
             </div>
           </div>
         </div>
