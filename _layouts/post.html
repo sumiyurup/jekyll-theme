@@ -15,20 +15,19 @@
               <!-- ======= Single Post Content ======= -->
               <div class="single-post">
                 <h1>{{page.title}}</h1>
-                <p class="mb-5 sub-tile">{{page.description}}</p>
+                <p class="mb-1 sub-tile">{{page.description}}</p>
+
                 <div class="post-meta">
+                  <span> {{ page.date | date: "%b %-d" }} </span>
+                  <span class="mx-1">&bullet;</span>
+                  <span>
+                    <a href="/about">By {{ page.author }}</a>
+                  </span>
                   <img
                     src="{{page.image}}"
                     alt="{{page.title}}"
-                    class="img-fluid"
+                    class="img-fluid mt-5"
                   />
-                  {% for category in page.categories %}
-                  <span class="date">{{ category }},</span>
-                  {% endfor %}
-                  <span class="mx-1">&bullet;</span>
-                  <span>
-                    {{ page.date | date_to_string: "ordinal", "US" }}</span
-                  >
                 </div>
 
                 {{content}}

@@ -408,13 +408,22 @@ section {
   color: #777;
   margin-bottom: 10px;
 }
-
+.post-meta span a {
+  color: #777;
+}
+.post-meta span a:hover {
+  border-bottom: 1px solid #777 !important;
+}
 @media (max-width: 768px) {
   .custom-border {
     border: none !important;
   }
 }
-
+.search-result h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #363737;
+}
 .author .photo {
   margin-right: 10px;
 }
@@ -894,6 +903,8 @@ section {
 .single-post .sub-tile {
   font-family: var(--font-primary);
   color: #777;
+}
+.single-post {
 }
 /*--------------------------------------------------------------
 # Contact

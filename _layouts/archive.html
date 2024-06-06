@@ -24,19 +24,17 @@
                   />
                 </a>
                 <div>
-                  <div class="post-meta">
-                    {% for category in posts.categories %}
-                    <span class="date">{{ category }},</span>
-                    {% endfor %}
-                    <span class="mx-1">&bullet;</span>
-                    <span>
-                      {{ posts.date | date_to_string: "ordinal", "US" }}
-                    </span>
-                  </div>
                   <h3>
                     <a href="{{ posts.url }}">{{ posts.title }}</a>
                   </h3>
                   <p>{{ posts.description }}</p>
+                  <div class="post-meta">
+                    <span> {{ posts.date | date: "%b %-d" }} </span>
+                    <span class="mx-1">&bullet;</span>
+                    <span>
+                      <a href="/about">By {{ posts.author }}</a>
+                    </span>
+                  </div>
                 </div>
               </div>
               {% endif %} {% endfor %}
@@ -54,19 +52,17 @@
                   />
                 </a>
                 <div>
-                  <div class="post-meta">
-                    {% for category in posts.categories %}
-                    <span class="date">{{ category }},</span>
-                    {% endfor %}
-                    <span class="mx-1">&bullet;</span>
-                    <span>
-                      {{ posts.date | date_to_string: "ordinal", "US" }}
-                    </span>
-                  </div>
                   <h3>
                     <a href="{{ posts.url }}">{{ posts.title }}</a>
                   </h3>
                   <p>{{ posts.description }}</p>
+                  <div class="post-meta">
+                    <span> {{ posts.date | date: "%b %-d" }} </span>
+                    <span class="mx-1">&bullet;</span>
+                    <span>
+                      <a href="/about">By {{ posts.author }}</a>
+                    </span>
+                  </div>
                 </div>
               </div>
               {% endif %} {% endfor %}

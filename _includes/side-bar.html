@@ -62,7 +62,7 @@
           <span class="date">{{ category }},</span>
           {% endfor %}
           <span class="mx-1">&bullet;</span>
-          <span>{{ posts.date | date_to_string: "ordinal", "US" }} </span>
+          <span>{{ post.date | date: "%b %-d" }} </span>
         </div>
         <h2 class="mb-2">
           <a href="{{ posts.url }}">{{ posts.title }}</a>
@@ -90,7 +90,7 @@
           <span class="date">{{ category }},</span>
           {% endfor %}
           <span class="mx-1">&bullet;</span>
-          <span>{{ posts.date | date_to_string: "ordinal", "US" }} </span>
+          <span>{{ post.date | date: "%b %-d" }} </span>
         </div>
         <h2 class="mb-2">
           <a href="{{ posts.url }}">{{ posts.title }}</a>
@@ -118,7 +118,7 @@
           <span class="date">{{ category }},</span>
           {% endfor %}
           <span class="mx-1">&bullet;</span>
-          <span>{{ posts.date | date_to_string: "ordinal", "US" }} </span>
+          <span>{{ post.date | date: "%b %-d" }} </span>
         </div>
         <h2 class="mb-2">
           <a href="{{ posts.url }}">{{ posts.title }}</a>

@@ -10,17 +10,18 @@ featured: false
 trending: false
 popular: false
 layout: post
+author: Mugabi Mwanje
 ---
 
-*I’ve been writing a lot about [the threat of a major war in Asia](https://www.noahpinion.blog/p/americans-are-still-not-worried-enough), but I haven’t written much about Japan’s role in that equation. And yet Japan would be at the very center of such a war. A Chinese seizure of Taiwan would [put Japan’s security in grave danger](https://thediplomat.com/2024/05/yes-japan-will-defend-taiwan/). Here’s a translated quote from a Chinese PLA officer [training manual](https://globaltaiwan.org/2020/12/fortnightly-review-v-5-issue-24/):*
+_I’ve been writing a lot about [the threat of a major war in Asia](https://www.noahpinion.blog/p/americans-are-still-not-worried-enough), but I haven’t written much about Japan’s role in that equation. And yet Japan would be at the very center of such a war. A Chinese seizure of Taiwan would [put Japan’s security in grave danger](https://thediplomat.com/2024/05/yes-japan-will-defend-taiwan/). Here’s a translated quote from a Chinese PLA officer [training manual](https://globaltaiwan.org/2020/12/fortnightly-review-v-5-issue-24/):_
 
-> *As soon as Taiwan is reunified with Mainland China, Japan’s maritime lines of communication will fall completely within the striking ranges of China’s fighters and bombers…Japan’s economic activity and war-making potential will be basically destroyed…blockades can cause sea shipments to decrease and can even create a famine within the Japanese islands.* 
+> _As soon as Taiwan is reunified with Mainland China, Japan’s maritime lines of communication will fall completely within the striking ranges of China’s fighters and bombers…Japan’s economic activity and war-making potential will be basically destroyed…blockades can cause sea shipments to decrease and can even create a famine within the Japanese islands._
 
-*And China’s ambassador to Japan [recently said](https://x.com/Joel_P_Atkinson/status/1793424845356839304) that “once the country of Japan is tied to the tanks plotting to split China, the Japanese people will be brought into the fire.”*
+_And China’s ambassador to Japan [recently said](https://x.com/Joel_P_Atkinson/status/1793424845356839304) that “once the country of Japan is tied to the tanks plotting to split China, the Japanese people will be brought into the fire.”_
 
-*Given the extreme imminent danger, Japan’s defense policy going forward seems extremely important. I suggested that the country should [deploy nuclear weapons](https://www.noahpinion.blog/p/japan-and-south-korea-need-nuclear), but there are probably plenty of other things the country’s leaders can do with regards to their conventional military capabilities.*
+_Given the extreme imminent danger, Japan’s defense policy going forward seems extremely important. I suggested that the country should [deploy nuclear weapons](https://www.noahpinion.blog/p/japan-and-south-korea-need-nuclear), but there are probably plenty of other things the country’s leaders can do with regards to their conventional military capabilities._
 
-*One person with plenty of ideas is [Jonathan Grady](https://x.com/_JonathanGrady), a founding principal at the consultancy [Canary Group](https://www.canarygroupllc.com/), who has done [strategic analyses](https://www.cnbc.com/quad-summit-and-china-game-theory-predictions-for-the-future-of-the-quad/) of [the Quad’s role](https://www.youtube.com/watch?app=desktop&v=7sTDJzc76rU) in Asian security and who sometimes writes about [Japanese defense policy](https://asia.nikkei.com/Opinion/To-pay-for-defense-buildup-Kishida-must-act-swiftly-on-taxes). In this guest post, he explains some of the economic and political hurdles Japan will have to overcome in order to continue its defense buildup and ensure its own security.*
+_One person with plenty of ideas is [Jonathan Grady](https://x.com/_JonathanGrady), a founding principal at the consultancy [Canary Group](https://www.canarygroupllc.com/), who has done [strategic analyses](https://www.cnbc.com/quad-summit-and-china-game-theory-predictions-for-the-future-of-the-quad/) of [the Quad’s role](https://www.youtube.com/watch?app=desktop&v=7sTDJzc76rU) in Asian security and who sometimes writes about [Japanese defense policy](https://asia.nikkei.com/Opinion/To-pay-for-defense-buildup-Kishida-must-act-swiftly-on-taxes). In this guest post, he explains some of the economic and political hurdles Japan will have to overcome in order to continue its defense buildup and ensure its own security._
 
 #### Japan Must Soon Decide on Major Defense Buildup
 
@@ -32,15 +33,11 @@ The historic post-World War II buildup aims to enhance Tokyo’s deterrence agai
 
 ![img](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7a3f44e8-a898-4411-872d-2280905e99d0_781x521.jpeg)
 
-
-
 Source: [USAF](https://www.af.mil/News/Photos/igphoto/2002917867/)
 
 However, doubts over Japan’s political resolve and financial capacity to support increased spending create a high-stakes dilemma. Tokyo may not achieve some of the defense capabilities it previously planned. Even if Japan were to secure most of its wish-list items, potentially limited ammunition reserves from a constrained budget will hamper some of Tokyo’s newfound defense capabilities. Due to their close proximity to potential conflict, [American bases in Japan are targets](https://www.wsj.com/articles/war-game-finds-u-s-taiwan-can-defend-against-a-chinese-invasion-11660047804). Japan lacking previously planned capabilities is a disservice to these bases and soldiers. The Japanese government must soon address its defense expenditure dilemma because of due time pressures on defense budget funding and its security implications.
 
 ![img](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F668ea3d4-41aa-42c1-89f7-cf26ebc3aead_975x648.jpeg)
-
-
 
 Arleigh Burke-class guided-missile destroyer USS Barry launches Tomahawk cruise missile; Source: US Navy
 
@@ -50,15 +47,13 @@ While Japan’s defense ambitions are clear, the path to achieving them is fraug
 
 As part of Japan’s new [National Security Strategy](https://www.mod.go.jp/j/policy/agenda/guideline/pdf/security_strategy_en.pdf), the Japanese government last year set aside a 43 trillion yen (approximately $300 Billion at the time) defense budget for five years, a 60% increase from previous defense spending. The expanded defense budget aims to help enhance deterrence against China and North Korea and equip Tokyo with counterstrike capabilities.
 
-While the defense policy is popular among the Japanese public, the means to pay for it is not. This has led to chronic indecision on how to fully fund the spending increases over the past two years. The budget included one trillion yen (approximately $7.3 billion at the time) in tax hikes intended to help fund the increases, to be implemented at [“an appropriate time in or after 2024.”](https://www.reuters.com/world/asia-pacific/japan-implement-defence-taxation-appropriate-time-2024-draft-2022-12-16/) This indecisive language was a compromise to delay unpopular tax hikes while expanding the defense budget. Unfortunately, the Japanese government delayed the hikes several times, now [punting tax hikes to 2026](https://asia.nikkei.com/Politics/Defense/Japan-likely-to-put-off-raising-taxes-to-build-up-defense-until-2026). The ruling Liberal Democratic Party government asserts *it will respect the planned defense increases*, *[if the tax hikes are implemented by 2026](https://asia.nikkei.com/Politics/Defense/Japan-likely-to-put-off-raising-taxes-to-build-up-defense-until-2026)*. This further ambiguity raises concerns whether defense priorities will be fully funded or continue to be funded, and undermines the Japanese government’s credibility.
+While the defense policy is popular among the Japanese public, the means to pay for it is not. This has led to chronic indecision on how to fully fund the spending increases over the past two years. The budget included one trillion yen (approximately $7.3 billion at the time) in tax hikes intended to help fund the increases, to be implemented at [“an appropriate time in or after 2024.”](https://www.reuters.com/world/asia-pacific/japan-implement-defence-taxation-appropriate-time-2024-draft-2022-12-16/) This indecisive language was a compromise to delay unpopular tax hikes while expanding the defense budget. Unfortunately, the Japanese government delayed the hikes several times, now [punting tax hikes to 2026](https://asia.nikkei.com/Politics/Defense/Japan-likely-to-put-off-raising-taxes-to-build-up-defense-until-2026). The ruling Liberal Democratic Party government asserts _it will respect the planned defense increases_, _[if the tax hikes are implemented by 2026](https://asia.nikkei.com/Politics/Defense/Japan-likely-to-put-off-raising-taxes-to-build-up-defense-until-2026)_. This further ambiguity raises concerns whether defense priorities will be fully funded or continue to be funded, and undermines the Japanese government’s credibility.
 
 Compounding its indecision, the government flirted with calling an election for nearly a year. During the past summer, speculation peaked that the government would call an election to lock in electoral gains, as it was enjoying [a spike in polls surpassing 50% in approval](https://www.bloomberg.com/news/articles/2023-05-01/support-for-japan-pm-tops-50-amid-speculation-on-early-election) following foreign policy victories.
 
 Unfortunately, the government did not call an election after months of consideration. The Kishida government [approval polls then precipitously dropped](https://asia.nikkei.com/Politics/Japan-PM-Kishida-s-approval-rating-hits-new-low-Nikkei-poll), even before an unprecedented corruption scandal was publicly known. The Japanese government missed its best opportunity to call an election when it was at a point of strength, subsequently missing a major opportunity to secure its coveted defense funding. As highlighted by the [Nikkei Asia graph](https://asia.nikkei.com/Politics/Japan-PM-Kishida-s-approval-rating-hits-new-low-Nikkei-poll), the Kishida government missed its optimal opportunity before the corruption scandal.
 
 ![img](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1789dc1c-1771-4543-ba3a-514c195c80e4_870x491.jpeg)
-
-
 
 Source: [Nikkei Asia](https://asia.nikkei.com/Politics/Japan-PM-Kishida-s-approval-rating-hits-new-low-Nikkei-poll)
 
@@ -77,8 +72,6 @@ Financial constraints further complicate Japan’s defense ambitions. Significan
 A prominent Japanese economist, responding to proposals for debt to fund the defense buildup, described a debt proposal as [“unsustainable.”](https://www.project-syndicate.org/commentary/japan-must-finance-its-military-buildup-by-raising-taxes-by-takatoshi-ito-2023-01) According to the NYU Stern Volatility Lab, when normalized for GDP Japan has faraway the [largest amount of financial systemic risk](https://vlab.stern.nyu.edu/srisk) from its debt among developed financial markets. In the event of a financial crisis, Japan’s systemic risk amounts to over 17% of its GDP. As illustrated below, Japan leads systemic risk among developed financial markets, highlighting economic vulnerabilities
 
 ![img](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F118ed380-1e2d-44d5-aa87-be356d2e980a_975x399.jpeg)
-
-
 
 Source: [NYU Stern V-Lab](https://vlab.stern.nyu.edu/srisk)
 
