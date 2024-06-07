@@ -10,7 +10,7 @@ featured: false
 trending: false
 popular: true
 layout: post
-author: Mugabi Mwanje
+author: mugabi
 ---
 
 _I’ve been writing a lot about [the threat of a major war in Asia](https://www.noahpinion.blog/p/americans-are-still-not-worried-enough), but I haven’t written much about Japan’s role in that equation. And yet Japan would be at the very center of such a war. A Chinese seizure of Taiwan would [put Japan’s security in grave danger](https://thediplomat.com/2024/05/yes-japan-will-defend-taiwan/). Here’s a translated quote from a Chinese PLA officer [training manual](https://globaltaiwan.org/2020/12/fortnightly-review-v-5-issue-24/):_

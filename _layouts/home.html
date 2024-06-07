@@ -39,7 +39,13 @@
 
                         <span class="mx-1">&bullet;</span>
                         <span>
-                          <a href="/about">By {{ posts.author }}</a>
+                          <!---->
+                          {% assign author = site.authors | where: 'short_name',
+                          posts.author | first %}
+                          <!---->
+                          {% if author %}
+                          <a href="{{ author.url }}">{{ author.name }}</a>
+                          {% endif %}
                         </span>
                       </div>
                     </div>
@@ -65,28 +71,28 @@
                     >
                       <li class="nav-item" role="presentation">
                         <button
-                          class="nav-link"
+                          class="nav-link active"
                           id="pills-latest-tab"
                           data-bs-toggle="pill"
                           data-bs-target="#pills-latest"
                           type="button"
                           role="tab"
                           aria-controls="pills-latest"
-                          aria-selected="false"
+                          aria-selected="true"
                         >
                           Latest
                         </button>
                       </li>
                       <li class="nav-item" role="presentation">
                         <button
-                          class="nav-link active"
+                          class="nav-link"
                           id="pills-popular-tab"
                           data-bs-toggle="pill"
                           data-bs-target="#pills-popular"
                           type="button"
                           role="tab"
                           aria-controls="pills-popular"
-                          aria-selected="true"
+                          aria-selected="false"
                         >
                           Popular
                         </button>
@@ -96,7 +102,7 @@
                     <div class="tab-content" id="pills-tabContent">
                       <!-- Popular -->
                       <div
-                        class="tab-pane fade show active"
+                        class="tab-pane fade"
                         id="pills-popular"
                         role="tabpanel"
                         aria-labelledby="pills-popular-tab"
@@ -109,17 +115,7 @@
                         <div
                           class="row border-bottom pt-5 justify-content-center"
                         >
-                          <div class="col-lg-4">
-                            <div class="post-entry-1 mb-0">
-                              <a href="{{posts.url}}"
-                                ><img
-                                  src="{{posts.image}}"
-                                  alt="{{posts.title}}"
-                                  class="img-fluid"
-                              /></a>
-                            </div>
-                          </div>
-                          <div class="col-lg-8">
+                          <div class="col-8">
                             <div class="post-entry-1">
                               <h2 class="mb-2">
                                 <a href="{{ posts.url }}">{{ posts.title }}</a>
@@ -129,9 +125,27 @@
                                 <span> {{ posts.date | date: "%b %-d" }} </span>
                                 <span class="mx-1">&bullet;</span>
                                 <span>
-                                  <a href="/about">By {{ posts.author }}</a>
+                                  <!---->
+                                  {% assign author = site.authors | where:
+                                  'short_name', posts.author | first %}
+                                  <!---->
+                                  {% if author %}
+                                  <a href="{{ author.url }}"
+                                    >{{ author.name }}</a
+                                  >
+                                  {% endif %}
                                 </span>
                               </div>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="post-entry-1 mb-0">
+                              <a href="{{posts.url}}"
+                                ><img
+                                  src="{{posts.image}}"
+                                  alt="{{posts.title}}"
+                                  class="img-fluid"
+                              /></a>
                             </div>
                           </div>
                         </div>
@@ -143,7 +157,7 @@
 
                       <!-- Trending -->
                       <div
-                        class="tab-pane fade"
+                        class="tab-pane fade show active"
                         id="pills-trending"
                         role="tabpanel"
                         aria-labelledby="pills-trending-tab"
@@ -154,7 +168,32 @@
                         <div
                           class="row border-bottom pt-5 justify-content-center"
                         >
-                          <div class="col-lg-4">
+                          <div class="col-8">
+                            <div class="post-entry-1">
+                              <h2 class="mb-2">
+                                <a href="{{ posts.url }}">{{ posts.title }}</a>
+                              </h2>
+                              <p class="mb-1 d-block">{{posts.description}}</p>
+
+                              <div class="post-meta">
+                                <span> {{ posts.date | date: "%b %-d" }} </span>
+                                <span class="mx-1">&bullet;</span>
+                                <span>
+                                  <!---->
+                                  {% assign author = site.authors | where:
+                                  'short_name', posts.author | first %}
+                                  <!---->
+                                  {% if author %}
+                                  <a href="{{ author.url }}"
+                                    >{{ author.name }}</a
+                                  >
+                                  {% endif %}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-4">
                             <div class="post-entry-1 mb-0">
                               <a href="{{posts.url}}"
                                 ><img
@@ -162,24 +201,6 @@
                                   alt="{{posts.title}}"
                                   class="img-fluid"
                               /></a>
-                            </div>
-                          </div>
-                          <div class="col-lg-8">
-                            <div class="post-entry-1">
-                              <div class="post-meta">
-                                {% for category in posts.categories %}
-                                <span class="date">{{ category }},</span>
-                                {% endfor %}
-                                <span class="mx-1">&bullet;</span>
-                                <span
-                                  >{{ posts.date | date_to_string: "ordinal",
-                                  "US" }}
-                                </span>
-                              </div>
-                              <h2 class="mb-2">
-                                <a href="{{ posts.url }}">{{ posts.title }}</a>
-                              </h2>
-                              <p class="mb-4 d-block">{{posts.description}}</p>
                             </div>
                           </div>
                         </div>
@@ -203,7 +224,31 @@
                         <div
                           class="row border-bottom pt-5 justify-content-center"
                         >
-                          <div class="col-lg-4">
+                          <div class="col-8">
+                            <div class="post-entry-1">
+                              <h2 class="mb-2">
+                                <a href="{{ posts.url }}">{{ posts.title }}</a>
+                              </h2>
+                              <p class="mb-1 d-block">{{posts.description}}</p>
+
+                              <div class="post-meta">
+                                <span> {{ posts.date | date: "%b %-d" }} </span>
+                                <span class="mx-1">&bullet;</span>
+                                <span>
+                                  <!---->
+                                  {% assign author = site.authors | where:
+                                  'short_name', posts.author | first %}
+                                  <!---->
+                                  {% if author %}
+                                  <a href="{{ author.url }}"
+                                    >{{ author.name }}</a
+                                  >
+                                  {% endif %}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4">
                             <div class="post-entry-1 mb-0">
                               <a href="{{posts.url}}"
                                 ><img
@@ -211,24 +256,6 @@
                                   alt="{{posts.title}}"
                                   class="img-fluid"
                               /></a>
-                            </div>
-                          </div>
-                          <div class="col-lg-8">
-                            <div class="post-entry-1">
-                              <div class="post-meta">
-                                {% for category in posts.categories %}
-                                <span class="date">{{ category }},</span>
-                                {% endfor %}
-                                <span class="mx-1">&bullet;</span>
-                                <span
-                                  >{{ posts.date | date_to_string: "ordinal",
-                                  "US" }}
-                                </span>
-                              </div>
-                              <h2 class="mb-2">
-                                <a href="{{ posts.url }}">{{ posts.title }}</a>
-                              </h2>
-                              <p class="mb-4 d-block">{{posts.description}}</p>
                             </div>
                           </div>
                         </div>

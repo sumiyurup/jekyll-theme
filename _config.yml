@@ -22,5 +22,7 @@ plugins:
 collections:
   archive:
     output: true
+  authors:
+    output: true
 
 permalink: /:title

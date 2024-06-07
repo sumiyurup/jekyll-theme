@@ -11,41 +11,43 @@
       <section id="search-result" class="search-result">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-md-9">
-              {% for posts in site.posts %}
-              <!---->
-              {% if posts.featured != false %}
-              <div class="row post-entry-2 small-img align-items-center">
-                <div class="col-8">
-                  <h3>
-                    <a href="{{ posts.url }}">{{ posts.title }}</a>
-                  </h3>
-                  <p>{{ posts.description }}</p>
-                  <div class="post-meta">
-                    <span> {{ posts.date | date: "%b %-d" }} </span>
-                    <span class="mx-1">&bullet;</span>
-                    <span>
-                      <!---->
-                      {% assign author = site.authors | where: 'short_name',
-                      posts.author | first %}
-                      <!---->
-                      {% if author %}
-                      <a href="{{ author.url }}">{{ author.name }}</a>
-                      {% endif %}
-                    </span>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <a href="{{ posts.url }}" class="me-4 thumbnail">
-                    <img
-                      src="{{ posts.image }}"
-                      alt="{{ posts.title }}"
-                      class="img-fluid"
-                    />
-                  </a>
+            <div class="col-lg-9 col-md-11 col-12 post-content p-0">
+              <!-- ======= Single Post Content ======= -->
+              <div class="author">
+                <img
+                  src="{{page.profile}}"
+                  alt="{{page.title}}"
+                  class="img-fluid author-img"
+                />
+                <div class="content post-meta">
+                  <h1>{{page.name}}</h1>
+                  <span> @{{page.x_name}} </span>
+                  <span class="mx-1">&bullet;</span>
+                  <span> {{ page.date | date: "%b %-d" }} </span>
                 </div>
               </div>
-              {% endif %} {% endfor %}
+              <div class="single-post">
+                {{content}}
+
+                <!---->
+              </div>
+              <!-- End Single Post Content -->
+
+              <!-- ======= Comments ======= -->
+
+              <!-- End Comments -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Search Result -->
+
+      <!-- ======= Search Results ======= -->
+      <section id="search-result" class="search-result">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-9 mb-4">
+              <h1>My Posts</h1>
               <hr />
             </div>
             <div class="col-md-9">
