@@ -20,8 +20,14 @@
                 <div class="post-meta">
                   <span> {{ page.date | date: "%b %-d" }} </span>
                   <span class="mx-1">&bullet;</span>
-                  <span>
-                    <a href="/about">By {{ page.author }}</a>
+                  <span class="under">
+                    <!---->
+                    {% assign author = site.authors | where: 'short_name',
+                    page.author | first %}
+                    <!---->
+                    {% if author %}
+                    <a href="{{ author.url }}">{{ author.name }}</a>
+                    {% endif %}
                   </span>
                   <img
                     src="{{page.image}}"

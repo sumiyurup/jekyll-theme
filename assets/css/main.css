@@ -541,6 +541,10 @@ section {
   border-radius: 8px;
 }
 
+.under a:hover {
+  text-decoration: none !important;
+}
+
 @media (max-width: 960px) {
   .post-entry-2 .thumbnail {
     flex: 0 0 100%;
