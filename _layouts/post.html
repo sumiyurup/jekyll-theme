@@ -48,14 +48,14 @@
                     method="POST"
                     data-netlify="true"
                   >
-                    <input type="hidden" name="newsletter" value="newsletter" />
+                    <input type="hidden" name="form-name" value="newsletter" />
                     <div class="row justify-content-center">
                       <h2>Subscribe to the Newsletter</h2>
                       <div class="form-group col-lg-8">
                         <input
                           type="email"
                           class="form-control"
-                          name="newsletter-Email"
+                          name="Email"
                           id="email"
                           placeholder="Input your E-mail"
                           required
@@ -66,6 +66,7 @@
                           Send Message
                         </button>
                       </div>
+                      <div class="col-lg-12 mt-5">{% include share.html %}</div>
                     </div>
                   </form>
                 </div>
