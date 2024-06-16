@@ -41,10 +41,27 @@
                 <!---->
 
                 <div class="form mt-5">
-                  <form name="contact" method="POST" data-netlify="true">
-                    <input type="email" name="email" />
+                  <form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    class="php-email-form"
+                  >
+                    <div class="row">
+                      <div class="col-lg-8">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          placeholder="Input your E-mail"
+                          required
+                        />
+                      </div>
 
-                    <button type="submit">Send</button>
+                      <div class="col-lg-4">
+                        <button type="submit">Send</button>
+                      </div>
+                    </div>
                   </form>
                 </div>
               </div>
