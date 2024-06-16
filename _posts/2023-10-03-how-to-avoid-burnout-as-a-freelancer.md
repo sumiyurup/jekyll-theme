@@ -1,5 +1,5 @@
 ---
-title: "How to Avoid Burnout as a Freelancer"
+title: "How to Avoid Burnout as a Freelancer test 1"
 image: /assets/img/post-18.jpg
 slide_image: /assets/img/post-landscape-3.jpg
 description: "Explore effective strategies for balancing work and personal life as a freelancer."
