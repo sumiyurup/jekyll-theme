@@ -41,33 +41,10 @@
                 <!---->
 
                 <div class="form mt-5">
-                  <form
-                    name="newsletter"
-                    class="php-email-form"
-                    action="/thank-you/"
-                    method="POST"
-                    data-netlify="true"
-                  >
-                    <input type="hidden" name="form-name" value="newsletter" />
-                    <div class="row justify-content-center">
-                      <h2>Subscribe to the Newsletter</h2>
-                      <div class="form-group col-lg-8">
-                        <input
-                          type="email"
-                          class="form-control"
-                          name="Email"
-                          id="email"
-                          placeholder="Input your E-mail"
-                          required
-                        />
-                      </div>
-                      <div class="col-lg-4">
-                        <button type="submit" value="Submit" id="Form-submit">
-                          Send Message
-                        </button>
-                      </div>
-                      <div class="col-lg-12 mt-5">{% include share.html %}</div>
-                    </div>
+                  <form name="contact" method="POST" data-netlify="true">
+                    <input type="email" name="email" />
+
+                    <button type="submit">Send</button>
                   </form>
                 </div>
               </div>
